@@ -6,9 +6,10 @@
     <link rel="stylesheet" href="../../../assets/exercise.css">
     <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
     <script>
-        $(document).ready(function()
-        {
-            // TODO: #load: load name.txt into #output
+        $(document).ready(function(){
+             $("#load").click (function() {
+                $("#output").html("name.txt")
+             })
         });
     </script>
 </head>

@@ -8,11 +8,21 @@
     <script>
         $(document).ready(function()
         {
-            // TODO: bind a click event to every button (b1 … b8)
-
-            // TODO: highlight the selected elements with css("background-color", "yellow")
-
-            // TODO: #reset removes all backgrounds
+            $(document).ready(function () {
+                        $("button").click(function () {
+                            let btnText = $(this).text();
+                            if (btnText == "Reset") {
+                                $("#page *").css("background-color", "transparent");;
+                            } else {
+                                eval(btnText).css("background-color", "yellow");
+                            }
+                        })
+                        // TODO: bind a click event to every button (b1 … b8)
+            
+                        // TODO: highlight the selected elements with css("background-color", "yellow")
+            
+                        // TODO: #reset removes all backgrounds
+                    });
         });
     </script>
 </head>
